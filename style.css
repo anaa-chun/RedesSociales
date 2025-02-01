@@ -118,3 +118,10 @@ img.RedesSociales {
     /* Tamaño para móviles */
   }
 }
+
+@media screen and (orientation: landscape) {
+    body {
+      display: none; /* Oculta todo el contenido en horizontal */
+    }
+  }
+  
