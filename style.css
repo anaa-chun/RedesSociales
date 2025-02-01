@@ -1,10 +1,10 @@
-html,
+/* html,
 body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
   background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101)) fixed;
-}
+} */
 
 body {
   margin: 0;
@@ -15,8 +15,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  width: auto;
-  height: auto;
+  overflow: hidden;
 }
 
 /* Contenedor de los círculos */
