@@ -1,125 +1,115 @@
-/* html,
-body {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-  background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101)) fixed;
-} */
-
-html {
-  background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101));
-}
 
 body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101)) fixed;
-  min-height: 100vh;
-  min-width: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Contenedor de los círculos */
 ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  /*  max-width: 100%; */
-  gap: 20px;
-  /* Espacio entre los círculos */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    gap: 20px;
+    /* Espacio entre los círculos */
 }
 
 /* Elemento de la lista quitar los puntos esos*/
 ul li {
-  list-style: none;
+    list-style: none;
 }
 
 /* Enlaces (círculos) */
 ul li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  text-decoration: none;
-  padding: 20px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(2deg, #cdd3d9, #f1f4f891);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(2deg, #cdd3d9, #f1f4f891);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efecto hover para los círculos */
 ul li a:hover {
-  transform: scale(1.1);
-  /* Aumenta ligeramente el tamaño */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Iconos dentro de los círculos */
 ul li a .fab {
-  font-size: 30px;
-  color: #262626;
-  transition: color 0.3s ease;
+    font-size: 30px;
+    color: #262626;
+    transition: color 0.3s ease;
 }
 
 /* Imágenes dentro de los círculos */
 ul li a img {
-  width: 60%;
-  height: auto;
+    width: 60%;
+    height: auto;
 }
 
-/* Imagenes logos rrss */
-img.RedesSociales {
-  width: 63px;
-  height: auto;
-  transition: transform 0.3s ease;
+/* Estilos para .RedesSociales */
+.RedesSociales {
+    width: 80px;
+    /* Tamaño por defecto */
+    height: auto;
+    transition: transform 0.3s ease;
+    /* Efecto de transición al pasar el ratón */
 }
+
 
 /* TEMA DE RESPONSIVE (adaptación para distintas pantallas) */
 
 /* Diseño responsive */
 @media (max-width: 868px) {
-  ul li a {
-    width: 60px;
-    height: 60px;
-    margin: 3px;
-  }
+    ul li a {
+        width: 60px;
+        height: 60px;
+        margin: 3px;
+    }
 
-  ul li a .fab {
-    font-size: 24px;
-  }
+    ul li a .fab {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 480px) {
-  ul li a {
-    width: 50px;
-    height: 50px;
-  }
+    ul li a {
+        width: 50px;
+        height: 50px;
+    }
 
-  ul li a .fab {
-    font-size: 20px;
-  }
+    ul li a .fab {
+        font-size: 20px;
+    }
 }
 
-/* responsive imagenes */
+/* respinsive imagenes */
 @media (max-width: 768px) {
-  img.RedesSociales {
-    width: 55px;
-    /* Tamaño para tablets */
-  }
+    .RedesSociales {
+        width: 60px;
+        /* Tamaño para tablets */
+    }
 }
 
 @media (max-width: 480px) {
-  img.RedesSociales {
-    width: 50px;
-    /* Tamaño para móviles */
-  }
+    .RedesSociales {
+        width: 60px;
+        /* Tamaño para móviles */
+    }
 }
+
