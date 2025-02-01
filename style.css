@@ -1,3 +1,11 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101)) fixed;
+}
+
 body {
   margin: 0;
   padding: 0;
