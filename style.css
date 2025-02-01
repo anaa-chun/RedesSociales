@@ -13,7 +13,7 @@ body {
 /* Contenedor de los círculos */
 ul {
     margin: 0;
-    padding: 0;
+    padding: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
