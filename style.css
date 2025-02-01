@@ -1,19 +1,6 @@
-/* 
-html, body {
-    overflow-x: hidden;
-} */
-
-html, body {
-    overflow-x: hidden;
-    background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101));
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 body {
+    background-color: green;
     margin: 0;
     padding: 0;
     background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101));
@@ -25,14 +12,16 @@ body {
 
 /* Contenedor de los círculos */
 ul {
-    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    max-width: 100%;
+    gap: 20px;
+    /* Espacio entre los círculos */
 }
-
 
 /* Elemento de la lista quitar los puntos esos*/
 ul li {
@@ -123,16 +112,4 @@ img.RedesSociales {
         width: 45px;
         /* Tamaño para móviles */
     }
-}
-
-@media (max-width: 768px) {
-    ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-ul li a img {
-    max-width: 100%;
-    height: auto;
 }
