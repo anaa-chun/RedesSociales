@@ -1,114 +1,113 @@
 body {
-    margin: 0;
-    padding: 0;
-    /* background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101)); */
-   background-color: rgb(132, 163, 197);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101)); */
+  background-color: #84a3c5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Contenedor de los círculos */
 ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    gap: 20px;
-    /* Espacio entre los círculos */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  gap: 20px;
+  /* Espacio entre los círculos */
 }
 
 /* Elemento de la lista quitar los puntos esos*/
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 /* Enlaces (círculos) */
 ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    text-decoration: none;
-    padding: 20px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(2deg, #cdd3d9, #f1f4f891);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-decoration: none;
+  padding: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(2deg, #cdd3d9, #f1f4f891);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efecto hover para los círculos */
 ul li a:hover {
-    transform: scale(1.1);
-    /* Aumenta ligeramente el tamaño */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Iconos dentro de los círculos */
 ul li a .fab {
-    font-size: 30px;
-    color: #262626;
-    transition: color 0.3s ease;
+  font-size: 30px;
+  color: #262626;
+  transition: color 0.3s ease;
 }
 
 /* Imágenes dentro de los círculos */
 ul li a img {
-    width: 60%;
-    height: auto;
+  width: 60%;
+  height: auto;
 }
 
 /* Estilos para .Imagenes*/
 img.RedesSociales {
-    width: 50px;
-    /* Tamaño por defecto */
-    height: auto;
-    transition: transform 0.3s ease;
-    /* Efecto de transición al pasar el ratón */
+  width: 50px;
+  /* Tamaño por defecto */
+  height: auto;
+  transition: transform 0.3s ease;
+  /* Efecto de transición al pasar el ratón */
 }
-
 
 /* TEMA DE RESPONSIVE (adaptación para distintas pantallas) */
 
 /* Diseño responsive */
 @media (max-width: 868px) {
-    ul li a {
-        width: 60px;
-        height: 60px;
-        margin: 3px;
-    }
+  ul li a {
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+  }
 
-    ul li a .fab {
-        font-size: 24px;
-    }
+  ul li a .fab {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 480px) {
-    ul li a {
-        width: 50px;
-        height: 50px;
-    }
+  ul li a {
+    width: 50px;
+    height: 50px;
+  }
 
-    ul li a .fab {
-        font-size: 20px;
-    }
+  ul li a .fab {
+    font-size: 20px;
+  }
 }
 
 /* respinsive imagenes */
 @media (max-width: 768px) {
-    img.RedesSociales {
-        width: 60px;
-        /* Tamaño para tablets */
-    }
+  img.RedesSociales {
+    width: 60px;
+    /* Tamaño para tablets */
+  }
 }
 
 @media (max-width: 480px) {
-    img.RedesSociales {
-        width: 45px;
-        /* Tamaño para móviles */
-    }
+  img.RedesSociales {
+    width: 45px;
+    /* Tamaño para móviles */
+  }
 }

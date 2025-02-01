@@ -3,7 +3,7 @@ function inicial() {
   
     circulo.forEach((link) => {
       link.addEventListener("mouseover", () => {
-        link.style.backgroundColor = "#b3d9ff"; // Azul pastel
+        link.style.backgroundColor = "#184178"; // Azul pastel
       });
   
       link.addEventListener("mouseout", () => {
