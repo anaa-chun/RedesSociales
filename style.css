@@ -1,4 +1,9 @@
 
+html, body {
+    overflow-x: hidden;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -11,16 +16,14 @@ body {
 
 /* Contenedor de los círculos */
 ul {
-    margin: 0;
-    padding: 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    gap: 20px;
-    /* Espacio entre los círculos */
+    padding: 20px;
 }
+
 
 /* Elemento de la lista quitar los puntos esos*/
 ul li {
@@ -111,4 +114,16 @@ img.RedesSociales {
         width: 45px;
         /* Tamaño para móviles */
     }
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+ul li a img {
+    max-width: 100%;
+    height: auto;
 }
