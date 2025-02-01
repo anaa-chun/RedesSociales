@@ -6,17 +6,38 @@ body {
   background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101)) fixed;
 } */
 
-body {
+/* body {
   margin: 0;
   padding: 0;
   background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101));
   min-height: 100vh;
+  min-width: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
   overflow: hidden;
+} */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101)) fixed;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101));
+  min-height: 100vh;  /* Esto asegura que el fondo cubra la pantalla */
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Contenedor de los círculos */
 ul {
@@ -26,7 +47,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+ /*  max-width: 100%; */
   gap: 20px;
   /* Espacio entre los círculos */
 }
@@ -119,9 +140,3 @@ img.RedesSociales {
   }
 }
 
-@media screen and (orientation: landscape) {
-    body {
-      display: none; /* Oculta todo el contenido en horizontal */
-    }
-  }
-  
