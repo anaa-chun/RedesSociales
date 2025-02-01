@@ -1,6 +1,15 @@
+/* 
+html, body {
+    overflow-x: hidden;
+} */
 
 html, body {
     overflow-x: hidden;
+    background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
