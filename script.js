@@ -1,4 +1,4 @@
-/* function inicial() {
+function inicial() {
   let circulo = document.querySelectorAll("ul li a");
 
   circulo.forEach((link) => {
@@ -15,18 +15,3 @@
 window.addEventListener("load", () => {
   inicial();
 });
- */
-
-function lockOrientation() {
-    if (screen.orientation && screen.orientation.lock) {
-      screen.orientation.lock("portrait-primary")
-        .then(() => console.log("Orientation locked to portrait"))
-        .catch(error => console.error("Orientation lock failed:", error));
-    } else {
-      console.log("Screen Orientation API not supported");
-    }
-  }
-  
-  window.addEventListener("load", () => {
-    lockOrientation();
-  });
