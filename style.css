@@ -62,9 +62,9 @@ ul li a img {
     height: auto;
 }
 
-/* Estilos para .RedesSociales */
-.RedesSociales {
-    width: 80px;
+/* Estilos para .Imagenes*/
+img.RedesSociales {
+    width: 50px;
     /* Tamaño por defecto */
     height: auto;
     transition: transform 0.3s ease;
@@ -100,15 +100,15 @@ ul li a img {
 
 /* respinsive imagenes */
 @media (max-width: 768px) {
-    .RedesSociales {
+    img.RedesSociales {
         width: 60px;
         /* Tamaño para tablets */
     }
 }
 
 @media (max-width: 480px) {
-    .RedesSociales {
-        width: 60px;
+    img.RedesSociales {
+        width: 50px;
         /* Tamaño para móviles */
     }
 }
