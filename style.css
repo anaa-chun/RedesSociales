@@ -108,7 +108,7 @@ img.RedesSociales {
 
 @media (max-width: 480px) {
     img.RedesSociales {
-        width: 50px;
+        width: 45px;
         /* Tamaño para móviles */
     }
 }
