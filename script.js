@@ -36,28 +36,6 @@ function inicial() {
     
     body.style.overflowX = 'hidden';
     html.style.overflowX = 'hidden';
-  
-    // Prevent swipe left/right on touch devices
-    document.addEventListener('touchmove', function(event) {
-      if (event.scale !== 1) { event.preventDefault(); }
-      let firstTouch = event.touches[0];
-      let x = firstTouch.clientX;
-      let scrollLeft = html.scrollLeft || body.scrollLeft;
-      let scrollWidth = html.scrollWidth || body.scrollWidth;
-      let clientWidth = html.clientWidth || body.clientWidth;
-  
-      // Check if the touch is near the screen edges
-      if (x < 10 || x > clientWidth - 10) {
-        event.preventDefault();
-      }
-    }, { passive: false });
-  
-    // Prevent mouse wheel horizontal scrolling
-    window.addEventListener('wheel', function(event) {
-      if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
-        event.preventDefault();
-      }
-    }, { passive: false });
   }
   
   window.addEventListener("load", () => {
