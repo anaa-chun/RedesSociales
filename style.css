@@ -1,11 +1,8 @@
-html{
-    background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101));
-}
-
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101));
+    /* background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101)); */
+   background-color: rgb(132, 163, 197);
     min-height: 100vh;
     display: flex;
     justify-content: center;
