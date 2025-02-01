@@ -1,6 +1,5 @@
 
 body {
-    background-color: green;
     margin: 0;
     padding: 0;
     background: linear-gradient(rgba(87, 87, 88, 0.274), rgb(103, 101, 101));
@@ -13,7 +12,7 @@ body {
 /* Contenedor de los círculos */
 ul {
     margin: 0;
-    padding: 100%;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -90,7 +89,7 @@ img.RedesSociales {
 
 @media (max-width: 480px) {
     ul li a {
-        width: 50px;
+        width: 60px;
         height: 50px;
     }
 
